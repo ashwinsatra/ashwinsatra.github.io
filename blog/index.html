@@ -161,41 +161,40 @@
 
     <!--bookshop-live name(posts-list/posts-list.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
 
-<!--bookshop-live end-->
+<div class="container animate">
+  <div class="row" data-pagebreak="6">
+    
+  </div>
+</div>
 
-    <!--bookshop-live name(newsletter/newsletter.jekyll.html) params(bind=block) context(block=content_blocks[2]) -->
-<!-- begin subscribe -->
-
-<section class="c-subscribe section">
+<!--bookshop-live name(pagination.jekyll.html) params() context() -->
+<!-- begin pagination -->
+<nav class="pagination">
   <div class="container">
-    <div class="row">
-      <div class="col col-12">
+    <div class="pagination__inner">
 
-        <div class="c-subscribe__inner">
-          <div class="c-subscribe__info">
-            <h3 class="c-subscribe__title">Join my mailing list</h3>
-            <div class="c-subscribe__subtitle">
-              <span id="ityped"></span>
-            </div>
-          </div>
+      <div class="pagination__list">
+        
+        <a data-pagebreak-control="prev" href="." class="pagination__prev"><i class="ion ion-ios-arrow-back"></i> Prev</a> 
+        <span data-pagebreak-control="!prev" class="pagination__prev disabled"><i class="ion ion-ios-arrow-back"></i> Prev</span>
 
-          <form class="c-subscribe__form validate" action="//frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3"
-            method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
-            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
-            <input class="c-subscribe__form-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Your email address">
-            <button class="c-button c-button--primary c-button--large" id="membedded-subscribe" type="submit" name="subscribe">Subscribe</button>
-          </form>
-
+        <div class="pagination__count">
+          Page <span data-pagebreak-label="current">1</span>
+          of <span data-pagebreak-label="total">1</span>
         </div>
+
+        
+        <a data-pagebreak-control="next" href="." class="pagination__next">Next <i class="ion ion-ios-arrow-forward"></i></a>
+        <span data-pagebreak-control="!next" class="pagination__next disabled">Next <i class="ion ion-ios-arrow-forward"></i></span>
       </div>
+
     </div>
   </div>
-</section>
-<!-- end subscribe -->
+</nav>
+<!-- end pagination -->
 
-<script>
-  var itype_text = ['Get inspiration, updates and, cool stuff!'];
-</script>
+<!--bookshop-live end-->
+
 <!--bookshop-live end-->
 
 
